@@ -1,0 +1,16 @@
+debug: true
+server:
+  port: 8089
+spring:
+  jpa:
+    generate-ddl: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1
+    driver-class-name: net.sourceforge.jtds.jdbc.Driver
+    url: jdbc:jtds:sqlserver://192.168.1.203:1433;databaseName=mservice_db
+    username: rathish
+    password: r@th15h
